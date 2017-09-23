@@ -318,8 +318,8 @@ footer {
 		position:relative;
 		display:block;
 		border:0.5px solid black;
-		width:auto;
-		height:202.11px;
+		width: calc(268px * (100vw / 268px));
+		height: calc(202.11px * (100vh / 202.11px));
 		padding:20px 0px 20px 0px;
 		margin-bottom:40px;
 		background-position: center;
@@ -333,10 +333,12 @@ footer {
 		top:150px;
 		padding:20px 0;
 		background-color:#4aaaaf;
+		float:none;
 	}
 
 	.portLinks1, .portlinks2 {
 		float:none;
+		position:relative;
 	}
 
 }
@@ -379,13 +381,13 @@ footer {
 
 @media screen and (max-width:640px) {
 	body {
-		width:100%;
+		width:100vw;
 	}
 
 	header {
 		position:relative;
 		display:block;
-		min-width:0;
+		/* min-width:0; */
 		/* background-color:transparent; */
 		height:auto;
 		border:none;
@@ -440,7 +442,7 @@ footer {
 		width:90vw;
 		float:none;
 		max-width:640px;
-		min-width:200px;
+		/* min-width:200px; */
 	}
 
 	footer {
@@ -448,7 +450,7 @@ footer {
 		position:relative;
 		display:block;
 		width:100vw;
-		min-width:200px;
+		/* min-width:200px; */
 	}
 
 	/* #menu ul {
